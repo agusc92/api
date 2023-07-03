@@ -122,13 +122,19 @@ class controllerApi_movies extends api{
       
         
             $body=$this->getData();
+
             if($this->body_verify($body)){
                 return $this->Json_response("existen campos incompletos", 404);
                }
-
+            
             if(!empty($body)){
-            $this->model->add_movie($body->movie_name, $body->movie_image,      $body->synopsis, $body->id_gender,$body->movie_date);
+                if($this->control_repeat($body->movie_name)){
+                    return $this->json_response("La pelicula ya existe", 400);
+                }else{
+                    $this->model->add_movie($body->movie_name, $body->movie_image,      $body->synopsis, $body->id_gender,$body->movie_date);
              return $this->json_response("La pelicula fue agregada con exito", 201);
+                }
+            
             }
 
         }
@@ -165,6 +171,16 @@ class controllerApi_movies extends api{
                 
             }
             
+     }
+
+     function control_repeat($name){
+        $movies = $this->model->get_movies();
+        foreach($movies as $movie){
+            if($movie->movie_name == $name){
+                return true;
+            }
+        }
+        return false;
      }
      
         
