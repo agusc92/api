@@ -40,7 +40,7 @@ La api utiliza los siguientes codigos para reportar los distintos errores que pu
 ## Como realizar peticiones
 
 A continuacion se detalla las distintas rutas (endpoint) para realizar las distintas peticiones, algunas de ellas llevan parametros tanto obligatorios como opcionales.
-Tenga en cuenta que al realizar una peticion recibira un Json y/o un codigo de error notificando el estado de la peticion.
+Tenga en cuenta que al realizar una peticion recibira como respuesta un Json o un mensaje descriptivo del resultado de su solicitud y un codigo de error notificando el estado de la peticion.
 
 ## Peliculas
 
@@ -54,7 +54,7 @@ Obtiene el listado de peliculas ordenadas por ID de manera ascendente.
 | ----- | ---------- | ---------------------------- |
 | GET   | api/movies | https://localhost/api/movies |
 
-ejemplo de respuesta: Status: 200 "OK"
+Respuesta: Status: 200 "OK"
 
 ```json
 [
@@ -88,7 +88,7 @@ ejemplo de respuesta: Status: 200 "OK"
 | --------- | --------------------------- | ------- | ------------------------------ | ----------- |
 | :ID       | ID de la pelicula a obtener | Integer | https://localhost/api/movies/2 | Obligatorio |
 
-respuesta: Status: 200 "OK"
+Respuesta: Status: 200 "OK"
 
 ```json
 {
@@ -129,7 +129,7 @@ ejemplo de body:
 }
 ```
 
-respuesta: Status: 201 "Create OK"
+Respuesta: Status: 201 "Create OK"
 
 ### Editar pelicula
 
@@ -165,7 +165,7 @@ ejemplo de body:
 }
 ```
 
-respuesta: Status: 200 " OK"
+Respuesta: Status: 200 " OK"
 
 ### Eliminar una pelicula
 
@@ -193,7 +193,7 @@ Permite obtener un listado de todos los generos
 | ----- | ----------- | ----------------------------- |
 | GET   | api/genders | https://localhost/api/genders |
 
-ejemplo de respuesta: Status: 200 "OK"
+Respuesta: Status: 200 "OK"
 
 ```json
 [
@@ -222,7 +222,7 @@ ejemplo de respuesta: Status: 200 "OK"
 | --------- | ----------------------- | ------- | ------------------------------- | ----------- |
 | :ID       | ID del genero a obtener | Integer | https://localhost/api/genders/2 | Obligatorio |
 
-respuesta: Status: 200 "OK"
+Respuesta: Status: 200 "OK"
 
 ```json
 {
@@ -254,7 +254,7 @@ ejemplo de body:
   "prox_estreno":"Las colinas tienen ojos"
 }
 ```
-respuesta: Status: 200 “ OK”
+Respuesta: Status: 200 “ OK”
 ### Editar genero
 
 permite editar un genero a la base de datos
@@ -281,7 +281,7 @@ ejemplo de body:
 }
 ```
 
-respuesta: Status 200 "OK"
+Respuesta: Status 200 "OK"
 
 ### Eliminar un genero
 
