@@ -1,0 +1,282 @@
+{
+	"info": {
+		"_postman_id": "e3a00a2d-0add-4ee5-ad86-029e0f781733",
+		"name": "MisPelis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24296571"
+	},
+	"item": [
+		{
+			"name": "movies",
+			"item": [
+				{
+					"name": "obtener todas peliculas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/TPE_API_WEB2/movies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"TPE_API_WEB2",
+								"movies"
+							]
+						},
+						"description": "obtener todas las peliculas"
+					},
+					"response": []
+				},
+				{
+					"name": "obtener todas peliculas por filtradas por genero",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/TPE_API_WEB2/movies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"TPE_API_WEB2",
+								"movies"
+							]
+						},
+						"description": "obtener todas las peliculas"
+					},
+					"response": []
+				},
+				{
+					"name": "obtener peliculas ordenadas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"description": "obtiene listas de peliculas ordenadas por genero"
+					},
+					"response": []
+				},
+				{
+					"name": "obtener peliculas ordenadas ascendente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"description": "obtiene listas de peliculas ordenadas por genero"
+					},
+					"response": []
+				},
+				{
+					"name": "obtener peliculas ordenadas descendente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"description": "obtiene listas de peliculas ordenadas por genero"
+					},
+					"response": []
+				},
+				{
+					"name": "obtener peliculas paginadas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/TPE_API_WEB2/movies/page/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"TPE_API_WEB2",
+								"movies",
+								"page",
+								"3"
+							]
+						},
+						"description": "Obtener peliculas paginadas"
+					},
+					"response": []
+				},
+				{
+					"name": "obtener pelicula por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/TPE_API_WEB2/movies/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"TPE_API_WEB2",
+								"movies",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar pelicula",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"movie_name\": ,\r\n        \"movie_image\": \"http://gnula.nu/wp-content/uploads/2021/09/Stardust_poster_uk.jpg\",\r\n        \"synopsis\": \"Biopic sobre los orígenes del icónico David Bowie, centrado en la primera gira que el cantante hizo por los Estados Unidos en 1971.\",\r\n        \"id_gender\": 1,\r\n        \"movie_date\": 2020\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/TPE_API_WEB2/movies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"TPE_API_WEB2",
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editar pelicula",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"movie_name\": \"cambiado\",\r\n        \"movie_image\": \"http://gnula.nu/wp-content/uploads/2021/09/Stardust_poster_uk.jpg\",\r\n        \"synopsis\": \"Biopic sobre los orígenes del icónico David Bowie, centrado en la primera gira que el cantante hizo por los Estados Unidos en 1971.\",\r\n        \"id_gender\": 1 ,\r\n        \"movie_date\": 2020\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/TPE_API_WEB2/movies/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"TPE_API_WEB2",
+								"movies",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar pelicula",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/TPE_API_WEB2/movies/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"TPE_API_WEB2",
+								"movies",
+								"8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "genders",
+			"item": [
+				{
+					"name": "obtener generos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/TPE_API_WEB2/genders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"TPE_API_WEB2",
+								"genders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editar generos",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \r\n        \"name_gender\": \"Drama\",\r\n        \"amount\": 2,\r\n        \"prox_estreno\": \"quinto sentido\"\r\n    }"
+						},
+						"url": {
+							"raw": "http://localhost/TPE_API_WEB2/genders/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"TPE_API_WEB2",
+								"genders",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar genero",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name_gender\": \"anime\",\r\n        \"prox_estreno\": \"quinto sentido\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/TPE_API_WEB2/genders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"TPE_API_WEB2",
+								"genders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar genero",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/api2/genders/12",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api2",
+								"genders",
+								"12"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
