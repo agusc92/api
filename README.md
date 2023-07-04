@@ -19,7 +19,7 @@
     + [Eliminar un genero](#eliminar-un-genero)
 ## Descripcion
 
-Mis pelis brinda distintos servicios de gestion para una pagina de peliculas online
+Mas pelis brinda distintos servicios de gestion para una pagina de peliculas online
 
 ## Interactuar con la api
 
