@@ -76,7 +76,7 @@ ejemplo de respuesta: Status: 200 "OK"
 | Id_gender | Envia un ID de genero de peliculas para filtrar los resultados por los diferentes generos disponibles                                                                                                         | Integer | https://localhost/api/movies?id_gender=1              | Opcional |
 | sort      | Envía este parámetro para ordenar las películas por diferentes atributos:` id_movie`, `movie_name`, `id_gender`, `movie_date`                                                                                 | string  | https://localhost/api/movies?sort=id_movie            | Opcional |
 | order     | Envía este parámetro para especificar el sentido del orden de las películas, este parametro debe ir acompañado por el parametro `sort`. Valores posibles `asc`(orden ascendente) y `desc` (orden descendente) | string  | https://localhost/api/movies?sort=id_movie&&order=asc | opcional |
-| page      | Envia este parametro para obtener una pagina especifica de películas agrupadas de a 5                                                                                                                            | integer | https://localhost/api/movies?page=1                   | opcional |
+| page      | Envia este parametro para obtener una pagina especifica de películas paginadas de a 5                                                                                                                            | integer | https://localhost/api/movies?page=1                   | opcional |
 
 ### Obtener una pelicula en particular
 
