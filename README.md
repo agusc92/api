@@ -1,4 +1,4 @@
-# ApiMispelis
+# ApiMaspelis
 
 ## Descripcion
 
@@ -29,7 +29,7 @@ En esta seccion se desarrollaran los servicios relacionados al recurso **pelicul
 
 ### Obtener coleccion de peliculas
 
-Obtiene el listado de peliculas ordenadas por ID de manera descendente.
+Obtiene el listado de peliculas ordenadas por ID de manera ascendente.
 
 | Verbo | End-point  | Ejemplo                      |
 | ----- | ---------- | ---------------------------- |
