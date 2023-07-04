@@ -1,4 +1,6 @@
-- [ApiMaspelis](#apimaspelis)
+# ApiMaspelis
+
+## Indice
   * [Descripcion](#descripcion)
   * [Interactuar con la api](#interactuar-con-la-api)
   * [Codigos de estado de respuesta HTTP (codigos de error)](#codigos-de-estado-de-respuesta-http)
@@ -15,11 +17,6 @@
     + [Obtener un genero en particular](#obtener-un-genero-en-particular)
     + [Editar genero](#editar-genero)
     + [Eliminar un genero](#eliminar-un-genero)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
-# ApiMaspelis
-
 ## Descripcion
 
 Mis pelis brinda distintos servicios de gestion para una pagina de peliculas online
