@@ -14,7 +14,7 @@ La api utiliza los siguientes codigos para reportar los distintos errores que pu
 
 - 200 -> "OK" _Peticion realizada con exito_
 - 201 -> "Create OK" _Elemento creado exitosamente_
-- 400 -> "Bad Request" _asdasdasd_
+- 400 -> "Bad Request" _sintaxis inválida_
 - 404 -> "Not Found" _Elemento no encontrado_
 - 500 -> "Internal Server Error" _Error en el sistema, contacte al dev: alumno@tudai.web_
 

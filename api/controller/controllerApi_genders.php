@@ -53,9 +53,13 @@ class controllerApi_genders extends api{
                 return $this->Json_response("No se admiten campos vacios", 400);
             }
             
-            
-            $this->model->add_gender( $data->name_gender,$data->prox_estreno);
+            if($this->control_repeat($data->name_gender)){
+                return $this->json_response("el genero ya existe.", 400);
+            }else{
+                $this->model->add_gender( $data->name_gender,$data->prox_estreno);
             return $this->json_response("El genero fue creado con exito.", 201);
+            }
+            
              }else{
                 return $this->json_response("data vacio.", 400);
              }
@@ -84,7 +88,15 @@ class controllerApi_genders extends api{
         return empty($data->name_gender)|| empty($data->prox_estreno);
     }
 
-
+    function control_repeat($name){
+        $genders = $this->model->get_genders();
+        foreach($genders as $gender){
+            if($gender->name_gender == $name){
+                return true;
+            }
+        }
+        return false;
+     }
 
 
 
