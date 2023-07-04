@@ -1,7 +1,7 @@
 - [ApiMaspelis](#apimaspelis)
   * [Descripcion](#descripcion)
   * [Interactuar con la api](#interactuar-con-la-api)
-  * [Codigos de estado de respuesta HTTP (codigos de error)](#codigos-de-estado-de-respuesta-http--codigos-de-error-)
+  * [Codigos de estado de respuesta HTTP (codigos de error)](#codigos-de-estado-de-respuesta-http)
   * [Como realizar peticiones](#como-realizar-peticiones)
   * [Peliculas](#peliculas)
     + [Obtener coleccion de peliculas](#obtener-coleccion-de-peliculas)
@@ -29,7 +29,7 @@ Mis pelis brinda distintos servicios de gestion para una pagina de peliculas onl
 
 Si quieres probar nuestra API de una manera rápida te recomendamos el uso de PostMan. Postman es una extensión de Google Chrome que permite interactuar con HTTP API's de forma sencilla a través de una interfaz amigable para construir peticiones y obtener respuestas.
 
-## Codigos de estado de respuesta HTTP (codigos de error)
+## Codigos de estado de respuesta HTTP
 
 La api utiliza los siguientes codigos para reportar los distintos errores que pueden surgir.
 
