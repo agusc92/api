@@ -15,6 +15,7 @@
   * [Generos](#generos)
     + [Obtener coleccion de generos](#obtener-coleccion-de-generos)
     + [Obtener un genero en particular](#obtener-un-genero-en-particular)
+    + [Agregar un genero](#agregar-un-genero)
     + [Editar genero](#editar-genero)
     + [Eliminar un genero](#eliminar-un-genero)
 ## Descripcion
@@ -51,7 +52,7 @@ Obtiene el listado de peliculas ordenadas por ID de manera ascendente.
 
 | Verbo | End-point  | Ejemplo                      |
 | ----- | ---------- | ---------------------------- |
-| GET   | Api/movies | https://localhost/Api/movies |
+| GET   | api/movies | https://localhost/api/movies |
 
 ejemplo de respuesta: Status: 200 "OK"
 
@@ -72,20 +73,20 @@ ejemplo de respuesta: Status: 200 "OK"
 
 | Parametro | Descripcion                                                                                                                                                                                                   | Tipo    | Ejemplo                                               | caracter |
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ----------------------------------------------------- | -------- |
-| Id_gender | Envia un ID de genero de peliculas para filtrar los resultados por los diferentes generos disponibles                                                                                                         | Integer | https://localhost/Api/movies?id_gender=1              | Opcional |
-| sort      | Envía este parámetro para ordenar las películas por diferentes atributos:` id_movie`, `movie_name`, `id_gender`, `movie_date`                                                                                 | string  | https://localhost/Api/movies?sort=id_movie            | Opcional |
-| order     | Envía este parámetro para especificar el sentido del orden de las películas, este parametro debe ir acompañado por el parametro `sort`. Valores posibles `asc`(orden ascendente) y `desc` (orden descendente) | string  | https://localhost/Api/movies?sort=id_movie&&order=asc | opcional |
-| page      | Envia este parametro para obtener la lista de películas paginadas obtenidas de a 5                                                                                                                            | integer | https://localhost/Api/movies?page=1                   | opcional |
+| Id_gender | Envia un ID de genero de peliculas para filtrar los resultados por los diferentes generos disponibles                                                                                                         | Integer | https://localhost/api/movies?id_gender=1              | Opcional |
+| sort      | Envía este parámetro para ordenar las películas por diferentes atributos:` id_movie`, `movie_name`, `id_gender`, `movie_date`                                                                                 | string  | https://localhost/api/movies?sort=id_movie            | Opcional |
+| order     | Envía este parámetro para especificar el sentido del orden de las películas, este parametro debe ir acompañado por el parametro `sort`. Valores posibles `asc`(orden ascendente) y `desc` (orden descendente) | string  | https://localhost/api/movies?sort=id_movie&&order=asc | opcional |
+| page      | Envia este parametro para obtener una pagina especifica de películas agrupadas de a 5                                                                                                                            | integer | https://localhost/api/movies?page=1                   | opcional |
 
 ### Obtener una pelicula en particular
 
 | Verbo | End-point      | Ejemplo                          |
 | ----- | -------------- | -------------------------------- |
-| GET   | Api/movies/:ID | https://localhost/Api/movies/:ID |
+| GET   | api/movies/:ID | https://localhost/api/movies/:ID |
 
 | Parametro | Descripcion                 | Tipo    | Ejemplo                        | caracter    |
 | --------- | --------------------------- | ------- | ------------------------------ | ----------- |
-| :ID       | ID de la pelicula a obtener | Integer | https://localhost/Api/movies/2 | Obligatorio |
+| :ID       | ID de la pelicula a obtener | Integer | https://localhost/api/movies/2 | Obligatorio |
 
 respuesta: Status: 200 "OK"
 
@@ -106,7 +107,7 @@ permite agregar una pelicula a la base de datos
 
 | Verbo | End-point  | Ejemplo                      |
 | ----- | ---------- | ---------------------------- |
-| POST  | Api/movies | https://localhost/Api/movies |
+| POST  | api/movies | https://localhost/api/movies |
 
 | Atributo    | Descripcion                                                      | Tipo    | caracter    | Ejemplo                                  |
 | ----------- | ---------------------------------------------------------------- | ------- | ----------- | ---------------------------------------- |
@@ -136,11 +137,11 @@ permite editar una pelicula a la base de datos
 
 | Verbo | End-point      | Ejemplo                          |
 | ----- | -------------- | -------------------------------- |
-| POST  | Api/movies/:ID | https://localhost/Api/movies/:ID |
+| POST  | api/movies/:ID | https://localhost/api/movies/:ID |
 
 | Parametro | Descripcion                 | Tipo    | Ejemplo                        | caracter    |
 | --------- | --------------------------- | ------- | ------------------------------ | ----------- |
-| :ID       | ID de la pelicula a obtener | Integer | https://localhost/Api/movies/2 | Obligatorio |
+| :ID       | ID de la pelicula a obtener | Integer | https://localhost/api/movies/2 | Obligatorio |
 
 | Atributo    | Descripcion                                                     | Tipo    | caracter    | Ejemplo                                  |
 | ----------- | --------------------------------------------------------------- | ------- | ----------- | ---------------------------------------- |
@@ -172,7 +173,7 @@ Permite eliminar una pelicula
 
 | Verbo  | End-point      | Ejemplo                        |
 | ------ | -------------- | ------------------------------ |
-| DELETE | Api/movies/:ID | https://localhost/Api/movies/3 |
+| DELETE | api/movies/:ID | https://localhost/api/movies/3 |
 
 | Parametro | Descripcion                               | Tipo    | caracter    | Ejemplo |
 | --------- | ----------------------------------------- | ------- | ----------- | ------- |
@@ -190,7 +191,7 @@ Permite obtener un listado de todos los generos
 
 | Verbo | End-point   | Ejemplo                       |
 | ----- | ----------- | ----------------------------- |
-| GET   | Api/genders | https://localhost/Api/genders |
+| GET   | api/genders | https://localhost/api/genders |
 
 ejemplo de respuesta: Status: 200 "OK"
 
@@ -215,11 +216,11 @@ ejemplo de respuesta: Status: 200 "OK"
 
 | Verbo | End-point       | Ejemplo                           |
 | ----- | --------------- | --------------------------------- |
-| GET   | Api/genders/:ID | https://localhost/Api/genders/:ID |
+| GET   | api/genders/:ID | https://localhost/api/genders/:ID |
 
 | Parametro | Descripcion             | Tipo    | Ejemplo                         | caracter    |
 | --------- | ----------------------- | ------- | ------------------------------- | ----------- |
-| :ID       | ID del genero a obtener | Integer | https://localhost/Api/genders/2 | Obligatorio |
+| :ID       | ID del genero a obtener | Integer | https://localhost/api/genders/2 | Obligatorio |
 
 respuesta: Status: 200 "OK"
 
@@ -231,14 +232,36 @@ respuesta: Status: 200 "OK"
   "prox_estreno": "Aterrados"
 }
 ```
+### Agregar un genero
 
+permite agregar un genero a la base de datos
+
+| Verbo | End-point  | Ejemplo                      |
+| ----- | ---------- | ---------------------------- |
+| POST  | api/genders | https://localhost/api/genders |
+
+| Atributo    | Descripcion                                                      | Tipo    | caracter    | Ejemplo                                  |
+| ----------- | ---------------------------------------------------------------- | ------- | ----------- | ---------------------------------------- |
+| name_gender  | Nombre del genero que se quiere agregar.                     | string  | Obligatorio | thriller   |
+|prox_estreno| Nombre de la pelicula proxima a estrenar en este genero|string|Obligatorio|Las colinas tienen ojos|
+
+
+ejemplo de body:
+
+```json
+{
+  "name_gender": "thriller",
+  "prox_estreno":"Las colinas tienen ojos"
+}
+```
+respuesta: Status: 200 “ OK”
 ### Editar genero
 
 permite editar un genero a la base de datos
 
 | Verbo | End-point       | Ejemplo                         |
 | ----- | --------------- | ------------------------------- |
-| POST  | Api/genders/:ID | https://localhost/Api/genders/7 |
+| POST  | api/genders/:ID | https://localhost/api/genders/7 |
 
 | Parametro | Descripcion                         | Tipo    | caracter    | Ejemplo |
 | --------- | ----------------------------------- | ------- | ----------- | ------- |
@@ -266,7 +289,7 @@ Permite eliminar un genero
 
 | Verbo  | End-point       | Ejemplo                         |
 | ------ | --------------- | ------------------------------- |
-| DELETE | Api/genders/:ID | https://localhost/Api/genders/3 |
+| DELETE | api/genders/:ID | https://localhost/api/genders/3 |
 
 | Parametro | Descripcion                           | Tipo    | caracter    | Ejemplo |
 | --------- | ------------------------------------- | ------- | ----------- | ------- |
