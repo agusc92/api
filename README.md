@@ -1,3 +1,23 @@
+- [ApiMaspelis](#apimaspelis)
+  * [Descripcion](#descripcion)
+  * [Interactuar con la api](#interactuar-con-la-api)
+  * [Codigos de estado de respuesta HTTP (codigos de error)](#codigos-de-estado-de-respuesta-http--codigos-de-error-)
+  * [Como realizar peticiones](#como-realizar-peticiones)
+  * [Peliculas](#peliculas)
+    + [Obtener coleccion de peliculas](#obtener-coleccion-de-peliculas)
+        * [Query params aceptados](#query-params-aceptados)
+    + [Obtener una pelicula en particular](#obtener-una-pelicula-en-particular)
+    + [Agregar pelicula](#agregar-pelicula)
+    + [Editar pelicula](#editar-pelicula)
+    + [Eliminar una pelicula](#eliminar-una-pelicula)
+  * [Generos](#generos)
+    + [Obtener coleccion de generos](#obtener-coleccion-de-generos)
+    + [Obtener un genero en particular](#obtener-un-genero-en-particular)
+    + [Editar genero](#editar-genero)
+    + [Eliminar un genero](#eliminar-un-genero)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 # ApiMaspelis
 
 ## Descripcion
@@ -5,6 +25,7 @@
 Mis pelis brinda distintos servicios de gestion para una pagina de peliculas online
 
 ## Interactuar con la api
+
 
 Si quieres probar nuestra API de una manera rápida te recomendamos el uso de PostMan. Postman es una extensión de Google Chrome que permite interactuar con HTTP API's de forma sencilla a través de una interfaz amigable para construir peticiones y obtener respuestas.
 
